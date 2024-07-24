@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><span class="digi">Digi</span>Appliance</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <i class="fas fa-shopping-cart"></i>
+        </ul>
+    </nav>
+
+    <div class="flex-box">
+        <div class="left">
+            <div class="big-img">
+                <img src="img/2.webp">
+            </div>
+            <div class="images">
+                <div class="small-img">
+                    <img src="img/2.webp" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="img/33.webp" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="img/3.webp" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="img/4.webp" onclick="showImg(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="url">Home > Product > Desktop</div>
+            <div class="pname">Acer HA270 27 Inch (68.58 Cm) Full HD IPS LCD Monitor with LED Back Light Technology I Ultra Slim, 6.6mm Thick Frameless Design AMD Free Sync Monitor </div>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">&#8377 7000</div>
+            <div class="discount">MRP : <a>&#8377 12000</a></div>
+            <div class="description">
+                Exceptional Full HD IPS 27 Inch Ultra Thin Display : Enjoy immaculate image quality with 1920x1080 resolution and 178 degree wide viewing angles I Zero Frame DesignConnectivity Ports includes 1 x VGA Port, 1 x HDMI, 1 Audio-In Port, with Inbox HDMI and VGA CableCare for your eyes with Blue Light Shield,
+                Flickerless technology along with Comfyview which helps to protect the eyes and gives comfortable viewing experience250 Nits Brightness, 4MS Response Time 75Hz Refresh Rate with AMD Free Sync Technology I -5 to 15 degree tilted angle for the comfortable
+                viewing Integreated 2W X 2 Stereo Speakers for Enhanced Multimedia Experience 3 Year on site warranty.
+            </div>
+
+            <div class="btn-box">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let bigImg = document.querySelector('.big-img img');
+        function showImg(pic){
+            bigImg.src = pic;
+        }
+    </script>
+</body>
+</html>
